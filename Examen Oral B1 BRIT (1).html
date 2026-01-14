@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen Oral B1 BRIT - Guía Práctica</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #2c3e50;
+            background-color: #f5f7fa;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        
+        /* COVER PAGE */
+        .cover {
+            background: linear-gradient(135deg, #003366 0%, #0052a3 100%);
+            color: white;
+            padding: 80px 40px;
+            text-align: center;
+            page-break-after: always;
+        }
+        
+        .cover h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+        
+        .cover .subtitle {
+            font-size: 1.3em;
+            margin-bottom: 40px;
+            opacity: 0.95;
+        }
+        
+        .cover .year {
+            font-size: 0.95em;
+            opacity: 0.8;
+            margin-top: 60px;
+            border-top: 2px solid rgba(255,255,255,0.3);
+            padding-top: 30px;
+        }
+        
+        /* HEADER */
+        header {
+            background: linear-gradient(135deg, #003366 0%, #0052a3 100%);
+            color: white;
+            padding: 30px 40px;
+            text-align: center;
+        }
+        
+        header h1 {
+            font-size: 2em;
+            margin-bottom: 5px;
+        }
+        
+        header p {
+            font-size: 1.1em;
+            opacity: 0.95;
+        }
+        
+        /* MAIN CONTENT */
+        main {
+            padding: 40px;
+        }
+        
+        section {
+            margin-bottom: 50px;
+            page-break-inside: avoid;
+        }
+        
+        h2 {
+            color: #003366;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #0052a3;
+        }
+        
+        h3 {
+            color: #0052a3;
+            font-size: 1.3em;
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+        
+        h4 {
+            color: #2c3e50;
+            font-size: 1.1em;
+            margin-top: 15px;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+        
+        p {
+            margin-bottom: 12px;
+            text-align: justify;
+        }
+        
+        /* TABLES */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        th {
+            background-color: #003366;
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+        }
+        
+        td {
+            padding: 12px;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #f9fafb;
+        }
+        
+        /* LISTS */
+        ul, ol {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+        
+        /* SUCCESS/ERROR BOXES */
+        .success {
+            background-color: #d4edda;
+            border-left: 4px solid #28a745;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 4px;
+            color: #155724;
+        }
+        
+        .error {
+            background-color: #f8d7da;
+            border-left: 4px solid #dc3545;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 4px;
+            color: #721c24;
+        }
+        
+        .info {
+            background-color: #cfe2ff;
+            border-left: 4px solid #0052a3;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 4px;
+            color: #002851;
+        }
+        
+        .checkmark::before {
+            content: "✅ ";
+            margin-right: 5px;
+        }
+        
+        .cross::before {
+            content: "❌ ";
+            margin-right: 5px;
+        }
+        
+        /* EXAMPLES */
+        .example {
+            background-color: #f0f4f8;
+            border: 2px solid #0052a3;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 6px;
+            page-break-inside: avoid;
+        }
+        
+        .example h4 {
+            color: #003366;
+            margin-top: 0;
+        }
+        
+        .example-text {
+            background-color: white;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-left: 3px solid #0052a3;
+            font-style: italic;
+        }
+        
+        .analysis {
+            background-color: #e8f4f8;
+            padding: 15px;
+            border-radius: 4px;
+            margin-top: 15px;
+        }
+        
+        .dialogue {
+            background-color: #f9fafb;
+            padding: 20px;
+            border-radius: 6px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.95em;
+            margin-bottom: 20px;
+        }
+        
+        .speaker {
+            color: #003366;
+            font-weight: 600;
+            margin-top: 10px;
+            margin-bottom: 5px;
+        }
+        
+        .speaker:first-child {
+            margin-top: 0;
+        }
+        
+        /* CARDS */
+        .card {
+            background-color: #f9fafb;
+            padding: 20px;
+            border-radius: 6px;
+            margin-bottom: 15px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .card h5 {
+            color: #003366;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+        
+        /* HIGHLIGHTS */
+        strong {
+            color: #0052a3;
+            font-weight: 600;
+        }
+        
+        em {
+            color: #0052a3;
+            font-style: italic;
+        }
+        
+        /* WATERMARK */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(-45deg);
+            width: 600px;
+            height: 600px;
+            background-image: url('https://agi-prod-file-upload-public-main-use1.s3.amazonaws.com/0491e4f8-fd77-44dd-9167-98f2b71d2b1d');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            opacity: 0.8;
+            pointer-events: none;
+            z-index: -1;
+        }
+        
+        /* FOOTER */
+        footer {
+            background-color: #f5f7fa;
+            padding: 20px 40px;
+            text-align: center;
+            font-size: 0.9em;
+            color: #666;
+            border-top: 1px solid #ddd;
+        }
+        
+        /* PAGE BREAKS */
+        .page-break {
+            page-break-after: always;
+            margin: 40px 0;
+        }
+        
+        /* PRINT STYLES */
+        @media print {
+            body {
+                background-color: white;
+            }
+            
+            .container {
+                box-shadow: none;
+            }
+            
+            section {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- COVER PAGE -->
+        <div class="cover">
+            <h1>EXAMEN ORAL B1 BRIT</h1>
+            <h1>ARAGÓN</h1>
+            <div class="subtitle">Guía Práctica - Producción Oral</div>
+            <div style="margin-top: 40px; font-size: 1.1em;">
+                <div>Mediación Oral • Exposición • Interacción</div>
+            </div>
+            <div class="year">
+                <div>Escuelas Oficiales de Idiomas de Aragón</div>
+                <div style="margin-top: 10px;">2025/26</div>
+                <div style="margin-top: 30px; font-size: 0.95em; opacity: 0.9;">
+                    <div style="margin-top: 15px;">Realizado por Nuria Calvo Domínguez</div>
+                    <div style="margin-top: 5px;">(IES Goya de Zaragoza)</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- MAIN CONTENT -->
+        <main>
+            <!-- SECTION 1: STRUCTURE -->
+            <section>
+                <h2>📋 ESTRUCTURA DEL EXAMEN ORAL B1</h2>
+                
+                <h3>Las 3 Actividades de Producción Oral</h3>
+                
+                <table>
+                    <tr>
+                        <th>Actividad</th>
+                        <th>Tipo</th>
+                        <th>Preparación</th>
+                        <th>Exposición</th>
+                    </tr>
+                    <tr>
+                        <td><strong>Mediación Oral</strong></td>
+                        <td>Individual</td>
+                        <td>3 minutos</td>
+                        <td>2 minutos</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Exposición</strong></td>
+                        <td>Individual</td>
+                        <td>2 minutos</td>
+                        <td>2 minutos</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Interacción</strong></td>
+                        <td>Parejas/Tríos</td>
+                        <td>2 minutos</td>
+                        <td>3-5 minutos</td>
+                    </tr>
+                </table>
+                
+                <div class="info">
+                    <strong>En convocatoria ordinaria:</strong> Mediación + Exposición se preparan juntas (5 minutos totales)
+                </div>
+            </section>
+            
+            <!-- SECTION 2: MEDIACIÓN -->
+            <section>
+                <h2>A) MEDIACIÓN ORAL</h2>
+                
+                <p><strong>Objetivo:</strong> Transmitir información de un texto en español al inglés, siguiendo instrucciones.</p>
+                
+                <h3>Proceso</h3>
+                <ol>
+                    <li>Recibes un texto en español (máx. 250 palabras)</li>
+                    <li>Tienes 3 minutos para preparar notas</li>
+                    <li>Transmites la información en inglés en 2 minutos</li>
+                    <li>Puedes tomar notas, pero leerlas penaliza</li>
+                </ol>
+                
+                <h3>Criterios de Evaluación (25% cada uno)</h3>
+                <ul>
+                    <li><strong>Eficacia comunicativa:</strong> ¿Se entiende la información?</li>
+                    <li><strong>Interpretación del contenido:</strong> ¿Seleccionas lo importante?</li>
+                    <li><strong>Estrategias de mediación:</strong> ¿Resumes, explicas, reformulas?</li>
+                    <li><strong>Organización y corrección:</strong> ¿Hay orden lógico?</li>
+                </ul>
+                
+                <h3>Lo Importante</h3>
+                <div class="success">
+                    <div class="checkmark">Reformular la información (no es traducción literal)</div>
+                    <div class="checkmark">Seleccionar puntos clave</div>
+                    <div class="checkmark">Usar estrategias: resumir, explicar, comparar</div>
+                </div>
+                <div class="error">
+                    <div class="cross">NO inventar información</div>
+                    <div class="cross">NO traducción palabra por palabra</div>
+                </div>
+            </section>
+            
+            <!-- SECTION 3: EXPOSICIÓN -->
+            <section>
+                <h2>B) EXPOSICIÓN / PRODUCCIÓN</h2>
+                
+                <p><strong>Objetivo:</strong> Producir un discurso continuado sobre un tema en 2 minutos.</p>
+                
+                <h3>Proceso</h3>
+                <ol>
+                    <li>Recibes una ficha con tema + puntos orientativos</li>
+                    <li>Tienes 2 minutos para preparar notas</li>
+                    <li>Hablas 2 minutos de forma fluida</li>
+                    <li>No necesitas cubrir todos los puntos</li>
+                </ol>
+                
+                <h3>Criterios de Evaluación (25% cada uno)</h3>
+                <ul>
+                    <li><strong>Eficacia comunicativa:</strong> ¿Se entiende el tema?</li>
+                    <li><strong>Organización y fluidez:</strong> ¿Hay estructura clara?</li>
+                    <li><strong>Riqueza lingüística:</strong> ¿Hay variedad léxica?</li>
+                    <li><strong>Corrección y pronunciación:</strong> ¿Errores graves?</li>
+                </ul>
+                
+                <h3>Lo Importante</h3>
+                <div class="success">
+                    <div class="checkmark">Estructura: Intro → 2 puntos → Cierre</div>
+                    <div class="checkmark">Usar conectores</div>
+                    <div class="checkmark">Claridad > perfección</div>
+                </div>
+                <div class="error">
+                    <div class="cross">NO leer completamente de notas</div>
+                    <div class="cross">NO monólogo perfecto sin pausas naturales</div>
+                </div>
+            </section>
+            
+            <!-- SECTION 4: INTERACCIÓN -->
+            <section>
+                <h2>C) INTERACCIÓN ORAL</h2>
+                
+                <p><strong>Objetivo:</strong> Mantener una conversación real, negociar y tomar decisiones conjuntas.</p>
+                
+                <h3>Proceso</h3>
+                <ol>
+                    <li>Recibes ficha con situación + instrucciones</li>
+                    <li>2 minutos de preparación (con tu pareja/grupo)</li>
+                    <li>3 minutos conversación (pareja) o 5 minutos (trío)</li>
+                    <li>Conversáis de forma equilibrada</li>
+                </ol>
+                
+                <h3>Criterios de Evaluación (25% cada uno)</h3>
+                <ul>
+                    <li><strong>Eficacia comunicativa:</strong> ¿Comunicas ideas? ¿Llegas a decisiones?</li>
+                    <li><strong>Organización y fluidez:</strong> ¿Hay coherencia?</li>
+                    <li><strong>Riqueza lingüística:</strong> ¿Variedad?</li>
+                    <li><strong>Corrección y pronunciación:</strong> ¿Errores graves?</li>
+                </ul>
+                
+                <h3>Lo Importante</h3>
+                <div class="success">
+                    <div class="checkmark">Participación equilibrada</div>
+                    <div class="checkmark">Escucha activa</div>
+                    <div class="checkmark">Expresión de acuerdo/desacuerdo</div>
+                    <div class="checkmark">Reacción genuina a lo que dice el otro</div>
+                </div>
+                <div class="error">
+                    <div class="cross">NO dominar la conversación</div>
+                    <div class="cross">NO monólogos disfrazados</div>
+                </div>
+            </section>
+            
+            <div class="page-break"></div>
+            
+            <!-- SECTION 5: CHEAT SHEET -->
+            <section>
+                <h2>🧠 CHEAT SHEET - EXPRESIONES CLAVE</h2>
+                
+                <h3>Conectores Esenciales</h3>
+                
+                <div class="card">
+                    <h5>Orden de Ideas</h5>
+                    <ul>
+                        <li><strong>First / First of all</strong> → Empezar punto 1</li>
+                        <li><strong>Then / After that</strong> → Segundo punto</li>
+                        <li><strong>Finally / In the end</strong> → Conclusión</li>
+                    </ul>
+                </div>
+                
+                <div class="card">
+                    <h5>Añadir Información</h5>
+                    <ul>
+                        <li><strong>Also</strong> → Añadir idea</li>
+                        <li><strong>Moreover</strong> → Además (más formal)</li>
+                        <li><strong>Another point is…</strong> → Otro aspecto</li>
+                    </ul>
+                </div>
+                
+                <div class="card">
+                    <h5>Contrastar</h5>
+                    <ul>
+                        <li><strong>However</strong> → Contraste claro</li>
+                        <li><strong>But</strong> → Pero (informal)</li>
+                        <li><strong>On the other hand</strong> → Por otro lado</li>
+                    </ul>
+                </div>
+                
+                <div class="card">
+                    <h5>Conclusión</h5>
+                    <ul>
+                        <li><strong>In conclusion</strong> → Cierre formal</li>
+                        <li><strong>To sum up</strong> → Resumen</li>
+                        <li><strong>So / Therefore</strong> → Por lo tanto</li>
+                    </ul>
+                </div>
+            </section>
+            
+            <!-- SECTION 6: EXPOSICIÓN PHRASES -->
+            <section>
+                <h2>Frases para EXPOSICIÓN</h2>
+                
+                <div class="card">
+                    <h5>Empezar</h5>
+                    <ul>
+                        <li>I'm going to talk about…</li>
+                        <li>The topic is…</li>
+                        <li>Let me present…</li>
+                        <li>I'd like to discuss…</li>
+                    </ul>
+                </div>
+                
+                <div class="card">
+                    <h5>Desarrollar</h5>
+                    <ul>
+                        <li>First, there is…</li>
+                        <li>Another important aspect is…</li>
+                        <li>One key reason is…</li>
+                    </ul>
+                </div>
+                
+                <div class="card">
+                    <h5>Ejemplificar</h5>
+                    <ul>
+                        <li>For example… / For instance…</li>
+                        <li>Such as…</li>
+                        <li>A good example is…</li>
+                    </ul>
+                </div>
+                
+                <div class="card">
+                    <h5>Cerrar</h5>
+                    <ul>
+                        <li>In conclusion…</li>
+                        <li>To sum up…</li>
+                        <li>So, the main point is…</li>
+                    </ul>
+                </div>
+            </section>
+            
+            <!-- SECTION 7: INTERACCIÓN PHRASES -->
+            <section>
+                <h2>Frases para INTERACCIÓN</h2>
+                
+                <div class="card">
+                    <h5>Estar de Acuerdo</h5>
+                    <ul>
+                        <li>I agree with you</li>
+                        <li>That's true / That's right</li>
+                        <li>You're absolutely right</li>
+                        <li>Good idea! / Exactly!</li>
+                    </ul>
+                </div>
+                
+                <div class="card">
+                    <h5>Estar en Desacuerdo (cortésmente)</h5>
+                    <ul>
+                        <li>I see your point, but…</li>
+                        <li>I'm not sure about that</li>
+                        <li>I disagree slightly</li>
+                        <li>On the other hand…</li>
+                    </ul>
+                </div>
+                
+                <div class="card">
+                    <h5>Proponer</h5>
+                    <ul>
+                        <li>What if we…?</li>
+                        <li>We could…</li>
+                        <li>How about…?</li>
+                        <li>Why don't we…?</li>
+                    </ul>
+                </div>
+                
+                <div class="card">
+                    <h5>Decidir Juntos</h5>
+                    <ul>
+                        <li>So, we agree that…</li>
+                        <li>Let's choose…</li>
+                        <li>That sounds good to me</li>
+                        <li>Then, let's go with…</li>
+                    </ul>
+                </div>
+            </section>
+            
+            <!-- SECTION 8: TIMING -->
+            <section>
+                <h2>⏰ Estructura de 2 Minutos</h2>
+                
+                <table>
+                    <tr>
+                        <th>Fase</th>
+                        <th>Tiempo</th>
+                        <th>Qué dices</th>
+                    </tr>
+                    <tr>
+                        <td>Introducción</td>
+                        <td>15-20s</td>
+                        <td>"I'm going to talk about…"</td>
+                    </tr>
+                    <tr>
+                        <td>Punto 1</td>
+                        <td>30-40s</td>
+                        <td>Idea + ejemplo</td>
+                    </tr>
+                    <tr>
+                        <td>Punto 2</td>
+                        <td>30-40s</td>
+                        <td>Idea + ejemplo</td>
+                    </tr>
+                    <tr>
+                        <td>Cierre</td>
+                        <td>10-15s</td>
+                        <td>"In conclusion…"</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Total</strong></td>
+                        <td><strong>~2 min</strong></td>
+                        <td><strong>Discurso natural</strong></td>
+                    </tr>
+                </table>
+            </section>
+            
+            <div class="page-break"></div>
+            
+            <!-- SECTION 9: EXAMPLES -->
+            <section>
+                <h2>📚 EJEMPLOS PRÁCTICOS</h2>
+                
+                <h3>EJEMPLO 1: MEDIACIÓN ORAL</h3>
+                
+                <div class="example">
+                    <h4>Texto en Español (a mediar)</h4>
+                    <div class="example-text">
+                        "La Universidad de Zaragoza ofrece un nuevo programa de intercambio con universidades europeas. Los estudiantes pueden pasar un semestre en Francia, Italia o Portugal. El objetivo es mejorar el idioma y la experiencia internacional. El programa comienza en septiembre y hay becas disponibles para estudiantes con buen rendimiento académico."
+                    </div>
+                    
+                    <h4>Mediación Completa (2 minutos)</h4>
+                    <p>"According to the document, the University of Zaragoza has launched a new exchange program. The main benefit is that students can spend a semester abroad in France, Italy, or Portugal. <strong>First</strong>, the goal is to improve their language skills and gain international experience. <strong>Second</strong>, the program starts in September. <strong>Moreover</strong>, scholarships are available for students with good academic results. <strong>In conclusion</strong>, it's a good opportunity for students who want to improve their language and have an international experience."</p>
+                    
+                    <div class="analysis">
+                        <strong>✅ Análisis:</strong>
+                        <ul>
+                            <li>Selecciona puntos clave (no traduce todo)</li>
+                            <li>Reformula (no es traducción literal)</li>
+                            <li>Usa conectores: First, Moreover, In conclusion</li>
+                            <li>Completa ~2 minutos</li>
+                            <li>Estructura clara</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <h3>EJEMPLO 2: MEDIACIÓN ORAL</h3>
+                
+                <div class="example">
+                    <h4>Texto en Español (a mediar)</h4>
+                    <div class="example-text">
+                        "Los videojuegos educativos son herramientas cada vez más populares en las escuelas. Mejoran la concentración, desarrollan estrategia y permiten aprender de forma divertida. Sin embargo, algunos expertos advierten sobre el uso excesivo. Lo ideal es combinar videojuegos con otras actividades escolares tradicionales."
+                    </div>
+                    
+                    <h4>Mediación Completa (2 minutos)</h4>
+                    <p>"The text discusses educational video games in schools. <strong>First</strong>, they're becoming more popular because they improve concentration and develop strategy skills. <strong>Also</strong>, students can learn in a fun way. <strong>However</strong>, experts warn about excessive use. <strong>The main idea</strong> is that we should balance educational games with traditional school activities. <strong>In summary</strong>, video games can be useful tools, but they need to be used carefully and combined with other learning methods."</p>
+                    
+                    <div class="analysis">
+                        <strong>✅ Análisis:</strong>
+                        <ul>
+                            <li>Presenta opiniones del texto sin expresar la propia</li>
+                            <li>Usa conectores: First, Also, However</li>
+                            <li>Evita lectura literal</li>
+                            <li>~2 minutos</li>
+                            <li>Reformula claramente</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            
+            <section>
+                <h3>EJEMPLO 3: EXPOSICIÓN / MONÓLOGO</h3>
+                
+                <div class="example">
+                    <h4>Tema: "My favourite hobby"</h4>
+                    
+                    <h4>Exposición Completa (2 minutos)</h4>
+                    <p>"I'm going to talk about my favourite hobby, which is reading. <strong>First</strong>, I love reading because it's relaxing and helps me escape from daily stress. I enjoy fantasy novels and mystery books. <strong>Second</strong>, I read almost every day, especially before going to bed. I try to read at least 30 minutes per day. <strong>Moreover</strong>, reading has helped me improve my English and learn new vocabulary. <strong>In conclusion</strong>, reading is very important to me. It's both educational and entertaining, and I recommend it to everyone."</p>
+                    
+                    <div class="analysis">
+                        <strong>✅ Análisis:</strong>
+                        <ul>
+                            <li>Estructura clara: Intro → 3 puntos → Cierre</li>
+                            <li>Conectores: First, Second, Moreover, In conclusion</li>
+                            <li>Variedad lingüística: razones, ejemplos, frecuencia</li>
+                            <li>Sin leer, con pausas naturales</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <h3>EJEMPLO 4: EXPOSICIÓN / MONÓLOGO</h3>
+                
+                <div class="example">
+                    <h4>Tema: "Why is technology important in education?"</h4>
+                    
+                    <h4>Exposición Completa (2 minutos)</h4>
+                    <p>"Today I'd like to discuss why technology is important in education. <strong>First</strong>, technology provides students with access to unlimited information. With the internet and educational apps, we can learn anything we want at any time. <strong>Second</strong>, technology makes learning more interesting and engaging. Online videos, interactive exercises, and virtual classrooms are much more fun than traditional textbooks. <strong>Finally</strong>, learning technology now prepares us for our future jobs, because almost all careers require digital skills. <strong>To sum up</strong>, technology is essential in modern education."</p>
+                    
+                    <div class="analysis">
+                        <strong>✅ Análisis:</strong>
+                        <ul>
+                            <li>Estructura: intro + 3 puntos bien desarrollados + cierre</li>
+                            <li>Conectores variados: First, Second, Finally, To sum up</li>
+                            <li>Ejemplos concretos</li>
+                            <li>Riqueza lingüística</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            
+            <div class="page-break"></div>
+            
+            <section>
+                <h3>EJEMPLO 5: INTERACCIÓN ORAL</h3>
+                
+                <div class="example">
+                    <h4>Situación: Planning a school trip</h4>
+                    
+                    <h4>Diálogo Completo (3 minutos)</h4>
+                    
+                    <div class="dialogue">
+                        <div class="speaker">STUDENT A:</div>
+                        "Hi! We need to plan our school trip. I think we should go to Barcelona."
+                        
+                        <div class="speaker">STUDENT B:</div>
+                        "That sounds interesting. I agree Barcelona is a good idea. What do you want to do there?"
+                        
+                        <div class="speaker">A:</div>
+                        "Well, first, we could visit the Sagrada Familia. It's a beautiful church. Also, we could go to the beach."
+                        
+                        <div class="speaker">B:</div>
+                        "I see your point about the beach. However, I think the museums would be better. We could learn about art and history."
+                        
+                        <div class="speaker">A:</div>
+                        "That's true. You're right. What if we do both? Morning for museums, afternoon for the beach?"
+                        
+                        <div class="speaker">B:</div>
+                        "Great idea! That works for me. How should we travel? By train or by bus?"
+                        
+                        <div class="speaker">A:</div>
+                        "I think the train is better because it's faster."
+                        
+                        <div class="speaker">B:</div>
+                        "I agree. The train is more comfortable too. So, we've decided: Barcelona by train, museums in the morning, beach in the afternoon."
+                        
+                        <div class="speaker">A:</div>
+                        "Perfect! I think we have a good plan now."
+                    </div>
+                    
+                    <div class="analysis">
+                        <strong>✅ Análisis:</strong>
+                        <ul>
+                            <li>Equilibrio: A y B hablan aproximadamente igual</li>
+                            <li>Conexión: responden directamente al otro</li>
+                            <li>Acuerdo/desacuerdo: "I see your point, but…", "That's true"</li>
+                            <li>Propuestas: "What if we…?"</li>
+                            <li>Decisión conjunta: "So, we've decided…"</li>
+                            <li>~3 minutos de conversación natural</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            
+            <section>
+                <h3>EJEMPLO 6: INTERACCIÓN ORAL</h3>
+                
+                <div class="example">
+                    <h4>Situación: Choosing an environmental project for your school</h4>
+                    
+                    <h4>Diálogo Completo (3 minutos)</h4>
+                    
+                    <div class="dialogue">
+                        <div class="speaker">STUDENT A:</div>
+                        "I think we should do something about pollution. What's your opinion?"
+                        
+                        <div class="speaker">STUDENT B:</div>
+                        "I agree that pollution is important. But I think we should focus on recycling. It's simpler to organize."
+                        
+                        <div class="speaker">A:</div>
+                        "Hmm, that's a good point. However, I'd also like to consider planting trees. It's also simple and very beneficial."
+                        
+                        <div class="speaker">B:</div>
+                        "Trees are nice, but many schools already do that. I think recycling is more unique. What if we create a recycling program here?"
+                        
+                        <div class="speaker">A:</div>
+                        "Okay, I see your point. We could organize recycling bins in every classroom. That would be useful."
+                        
+                        <div class="speaker">B:</div>
+                        "Exactly! And we could teach other students about it."
+                        
+                        <div class="speaker">A:</div>
+                        "That's brilliant! So, we've decided to create a recycling program with educational component. We'll place bins and teach others."
+                        
+                        <div class="speaker">B:</div>
+                        "Yes! I think that's a really good plan. Let's present it next week."
+                        
+                        <div class="speaker">A:</div>
+                        "Great! Let's do it!"
+                    </div>
+                    
+                    <div class="analysis">
+                        <strong>✅ Análisis:</strong>
+                        <ul>
+                            <li>Ambos participan activamente (~50% cada uno)</li>
+                            <li>Desacuerdo cortés: "I agree… but…", "That's a good point. However…"</li>
+                            <li>Reacción genuina: repite ideas, amplía</li>
+                            <li>Propuestas: "What if we…?"</li>
+                            <li>Acuerdo final consensuado: "So, we've decided…"</li>
+                            <li>Cierre natural: "Let's do it!"</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- SECTION 10: ERRORS -->
+            <section>
+                <h2>⚠️ ERRORES CRÍTICOS</h2>
+                
+                <h3>Mediación Oral</h3>
+                <div class="error">
+                    <div class="cross">Leer las notas literalmente → Penaliza fluidez</div>
+                    <div class="cross">Traducción palabra por palabra → Pierde "estrategias de mediación"</div>
+                    <div class="cross">Inventar datos del texto → Penalización grave</div>
+                    <div class="cross">Quedarse callado → Reformula algo</div>
+                </div>
+                
+                <h3>Exposición</h3>
+                <div class="error">
+                    <div class="cross">Muy poco tiempo (30s) o muy mucho (4min) → No cumple tarea</div>
+                    <div class="cross">Todo en una única idea → Falta estructura</div>
+                    <div class="cross">Leer completamente de notas → Afecta fluidez</div>
+                    <div class="cross">Tema muy complicado → No tienes vocabulario B1</div>
+                </div>
+                
+                <h3>Interacción</h3>
+                <div class="error">
+                    <div class="cross">Monopolizar conversación → No es coproducción</div>
+                    <div class="cross">No reaccionar a lo que dice el otro → Parece falta de escucha</div>
+                    <div class="cross">Decisión no consensuada → Debe ser conjunta</div>
+                    <div class="cross">No participar → No hay producción oral</div>
+                </div>
+            </section>
+            
+            <!-- SECTION 11: STRATEGIES -->
+            <section>
+                <h2>✅ ESTRATEGIAS QUE SUBEN NOTA</h2>
+                
+                <div class="success">
+                    <div class="checkmark"><strong>Reformula si fallas</strong> → Demuestra autocorrección</div>
+                    <div class="checkmark"><strong>Contacto visual</strong> → Aumenta credibilidad</div>
+                    <div class="checkmark"><strong>Escucha activa</strong> → Reacciona genuinamente</div>
+                    <div class="checkmark"><strong>Conectores simples pero correctos</strong> → Estructura clara</div>
+                    <div class="checkmark"><strong>Respeta el tiempo</strong> → Ni muy poco ni muy mucho</div>
+                    <div class="checkmark"><strong>Lenguaje claro</strong> → Mejor simple que ininteligible</div>
+                </div>
+            </section>
+            
+            <!-- SECTION 12: SCORING -->
+            <section>
+                <h2>📊 PUNTUACIÓN Y REQUISITOS</h2>
+                
+                <table>
+                    <tr>
+                        <th>Criterio</th>
+                        <th>Porcentaje</th>
+                        <th>Mínimo para Pasar</th>
+                    </tr>
+                    <tr>
+                        <td>Eficacia comunicativa</td>
+                        <td>25%</td>
+                        <td>Se entiende el mensaje</td>
+                    </tr>
+                    <tr>
+                        <td>Organización/Fluidez</td>
+                        <td>25%</td>
+                        <td>Estructura clara, natural</td>
+                    </tr>
+                    <tr>
+                        <td>Riqueza lingüística</td>
+                        <td>25%</td>
+                        <td>Vocabulario variado</td>
+                    </tr>
+                    <tr>
+                        <td>Corrección/Pronunciación</td>
+                        <td>25%</td>
+                        <td>Errores no impiden entender</td>
+                    </tr>
+                    <tr style="background-color: #e8f4f8; font-weight: bold;">
+                        <td>TOTAL PRODUCCIÓN ORAL</td>
+                        <td>100%</td>
+                        <td>10 de 20 puntos (50%)</td>
+                    </tr>
+                </table>
+                
+                <div class="info">
+                    <strong>Nota importante:</strong> También necesitas 65 puntos totales en todas las 5 actividades (escrita + oral + mediación) para obtener el certificado B1.
+                </div>
+            </section>
+            
+            <!-- FINAL SECTION -->
+            <section>
+                <h2>🎯 RECORDATORIOS FINALES</h2>
+                
+                <div class="success">
+                    <div class="checkmark">No se espera perfección. Se espera comunicación clara.</div>
+                    <div class="checkmark">Los errores no suspenden, salvo si impiden entender.</div>
+                    <div class="checkmark">Reformula si fallas. Los examinadores valoran el esfuerzo.</div>
+                    <div class="checkmark">Habla claro y sencillo. Mejor simple que incomprensible.</div>
+                    <div class="checkmark">Respeta los tiempos. Ni 30 segundos ni 4 minutos.</div>
+                    <div class="checkmark">Escucha en interacción. Reacciona genuinamente.</div>
+                    <div class="checkmark">Usa conectores simples. Estructura tus ideas.</div>
+                </div>
+                
+                <div style="text-align: center; margin-top: 40px;">
+                    <h3 style="color: #003366; font-size: 2em; margin-bottom: 10px;">🍀 BUENA SUERTE</h3>
+                    <p style="font-size: 1.1em; color: #0052a3;">Confía en ti. Llevas preparación suficiente. Comunica con claridad.</p>
+                    <p style="font-size: 1.3em; font-weight: bold; color: #003366; margin-top: 20px;">¡Tú puedes!</p>
+                </div>
+            </section>
+        </main>
+        
+        <!-- FOOTER -->
+        <footer>
+            <p><strong>Guía B1 BRIT Aragón - Producción Oral</strong></p>
+        </footer>
+    </div>
+</body>
+</html>
